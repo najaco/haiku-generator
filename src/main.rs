@@ -7,16 +7,14 @@ use std::path::Path;
 
 static UNIX_DICTIONARY: &'static str = "/usr/share/dict/words";
 
-fn is_syllable(c: char) -> bool {
+fn is_vowel(c: char) -> bool {
     return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
 }
 fn count_syllables(word: &String) -> u32 {
     let mut syllable_count: u32 = 0;
     let mut i = 0;
     while i < word.len() - 1 {
-        if is_syllable(word.chars().nth(i).unwrap())
-            != is_syllable(word.chars().nth(i + 1).unwrap())
-        {
+        if is_vowel(word.chars().nth(i).unwrap()) != is_vowel(word.chars().nth(i + 1).unwrap()) {
             syllable_count += 1;
             i += 1;
         }
