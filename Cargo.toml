@@ -3,5 +3,13 @@ name = "haiku-generator"
 version = "0.1.1"
 edition = "2021"
 
+[lib]
+name = "haiku_generator"
+path = "src/haiku_generator.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
 [dependencies]
 rand = "0.8.5"
