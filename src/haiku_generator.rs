@@ -49,10 +49,12 @@ fn build_n_syllable_sentence(syllable_table: &HashMap<u32, Vec<String>>, mut n: 
     return sentence.join(" ");
 }
 
-#[derive(PartialEq)]
+#[derive(PartialEq, Clone)]
 pub struct HaikuGenerator {
     syllable_table: HashMap<u32, Vec<String>>,
 }
+
+
 impl HaikuGenerator {
     pub fn new(words: Vec<String>) -> HaikuGenerator {
         return HaikuGenerator {
