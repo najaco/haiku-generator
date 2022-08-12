@@ -1,5 +1,6 @@
 [package]
 name = "haiku-generator"
+description = "Naive implementation of haiku generation given a list of words"
 version = "0.1.1"
 edition = "2021"
 repository = "https://github.com/najaco/haiku-generator"
