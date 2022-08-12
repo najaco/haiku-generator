@@ -54,7 +54,6 @@ pub struct HaikuGenerator {
     syllable_table: HashMap<u32, Vec<String>>,
 }
 
-
 impl HaikuGenerator {
     pub fn new(words: Vec<String>) -> HaikuGenerator {
         return HaikuGenerator {
