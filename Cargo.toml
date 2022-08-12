@@ -2,6 +2,10 @@
 name = "haiku-generator"
 version = "0.1.1"
 edition = "2021"
+repository = "https://github.com/najaco/haiku-generator"
+readme = "README.md"
+license = "LICENSE"
+
 
 [lib]
 name = "haiku_generator"
