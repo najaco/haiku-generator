@@ -3,7 +3,6 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 use haiku_generator::HaikuGenerator;
-pub mod haiku_generator;
 
 static UNIX_DICTIONARY: &'static str = "/usr/share/dict/words";
 
